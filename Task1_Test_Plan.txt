@@ -1,0 +1,30 @@
+Test Case ID: TC_AMZ_CS_001
+Title: Navigate to Customer Service and Use the Help Search
+Description: Verify that the customer can navigate to the Customer Service page and search for help topics.
+
+Environment: Production (https://www.amazon.com)
+Test Data: N/A
+Priority: Medium
+Severity: Low
+
+Preconditions:
+- User is on https://www.amazon.com
+
+Test Steps:
+1. Navigate to https://www.amazon.com
+2. Validate the presence of the main menu (e.g., Today’s Deals, Customer Service, etc.)
+3. Click on “Customer Service”
+4. In the Customer Service search bar, search for “Where is my stuff”
+5. Click on the first result: “Track your package”
+6. Verify that the help article is opened
+
+Expected Result:
+- The Customer Service page opens successfully
+- The “Where is my stuff” result appears correctly
+- The “Track your package” page is displayed with relevant content
+
+Postconditions:
+- None
+
+Notes:
+- This test ensures basic navigation and search functionality within the help system.
