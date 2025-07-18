@@ -17,13 +17,8 @@
 import './commands'
 
 Cypress.on('uncaught:exception', (err, runnable) => {
-  // התעלם משגיאות שמגיעות מקוד של אמזון
   if (err.message.includes('cardModuleFactory is not a function')) {
     return false;
   }
 
-  // אפשר להתעלם מכל השגיאות החיצוניות ע"י return false תמידי:
-  // return false;
-
-  // אחרת - זרוק את השגיאה
 });
